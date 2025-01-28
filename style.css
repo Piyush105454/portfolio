@@ -1,0 +1,162 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+#header {
+    background: url('yesback.png') no-repeat center center/cover;
+    height: 100vh;
+    padding-bottom: 40px;
+   
+}
+
+.container {
+    
+    padding: 10px 10%;
+}
+
+/* Navigation Styles */
+
+
+nav img {
+    position:absolute;
+    left:0;
+   top:0;
+    height: 50px;
+    width: auto;
+}
+
+
+
+.header-text {
+    position:absolute;
+    top:30px;
+    bottom: 30px;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 60px;
+}
+
+.header-text h1 span {
+    color: aqua;
+}
+
+/* Responsive Menu Icon */
+.menu-icon {
+        display: none;
+   font-size: 28px;
+    color: white;
+    cursor: pointer;
+
+    }
+.menu-icon{
+    display: none;
+}
+/* Sections */
+.section {
+    padding: 60px 20px;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill {
+    background: #6610f2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: whitesmoke;
+        position: absolute;
+        width: 30%;
+        top: 60px;
+        right: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+       position:absolute;
+     right:0;
+    }
+
+    nav ul li {
+        
+        padding: 10px 0;
+        text-align: center;
+    }
+   nav ul li a{
+      text-decoration: none;
+      color:black;
+   }
+}
